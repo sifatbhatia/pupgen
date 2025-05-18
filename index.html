@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <script type="importmap">
+    {
+      "imports": {
+        "@material/web/": "https://esm.run/@material/web/"
+      }
+    }
+  </script>
+  <script type="module">
+    import '@material/web/all.js';
+    import { styles as typescaleStyles } from '@material/web/typography/md-typescale-styles.js';
+
+    document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+  </script>
+  <link rel="stylesheet" href="src/style.css">
+  <link id="dynamic-favicon" rel="icon" type="image/png" href="/focused.png">
+  <title>PupGen</title>
+</head>
+
+<body>
+  <main id="main-content" tabindex="-1" aria-label="PupGen main content">
+    <div class="title-section">
+      <div class="title-section-content">
+        <h1 class="md-typescale-display-large fix gradient-text" id="main-heading">PupGen</h1>
+        <h2 class="md-typescale-headline-medium">Your endless source of adorable dog GIFs</h2>
+
+      </div>
+      <a href="https://siftion.com" target="_blank"><p>Made by siftion</p></a>
+    </div>
+    <div id="root" aria-live="polite" aria-atomic="true"></div>
+    <button class="md-typescale-button-large" id="generate-button" aria-label="Generate a new dog GIF"
+      role="button">Generate</button>
+  </main>
+  <script type="module" src="/src/main.jsx"></script>
+  <script>
+    const favicon = document.getElementById('dynamic-favicon');
+    document.addEventListener('visibilitychange', () => {
+      if (document.visibilityState === 'visible') {
+        favicon.href = '/focused.png';
+      } else {
+        favicon.href = '/unfocused.png';
+      }
+    });
+  </script>
+</body>
+
+</html>

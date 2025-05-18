@@ -1,0 +1,16 @@
+.gif-container img,
+.dog-gif {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+@media (max-width: 480px) {
+  .gif-container img,
+  .dog-gif {
+    max-width: 95vw;
+    max-height: 40vh;
+  }
+}
