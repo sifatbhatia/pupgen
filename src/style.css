@@ -3,8 +3,8 @@ body {
   margin: 0;
   padding: 0 20px;
   box-sizing: border-box;
-  background-color: #1d0c0c;
-  color: #e89d97;
+  background-color: #0b1605;
+  color: #de831e;
 }
 
 .md-typescale-display-large {
@@ -27,8 +27,8 @@ button {
   height: 100%;
   border-radius: 100px;
   border: none;
-  background-color: #7a0007;
-  color: #e89d97;
+  background-color: #de831e;
+  color: #0f1606;
   font-size: 1.5rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -38,23 +38,23 @@ button {
   transition: all 0.3s ease;
 }
 button:hover {
-  background-color: #79000479;
-  color: #ffffff;
+  background-color:   #C4D6B0;
+  color: black;
   border-radius: 20px;
 }
 button:active {
-  background-color: #790004;
-  color: #ffffff;
+  background-color: #C4D6B0;
+  color: black;
   border-radius: 20px;
 }   
 
 .gif-container > * {
-  border: 1px solid #7a0007;
+  border: 1px solid #C4D6B0;
   border-radius: 20px;
   height: auto;
 }
 a {
-  color: #e89c97aa;
+  color: #de841e9a;
   text-decoration: underline;
   font-size: 1.2rem;
   font-weight: 600;
@@ -62,14 +62,14 @@ a {
   transition: all 0.3s ease;
 }
 a:hover {
-  color: #e89c97;
+  color: #de831e;
   text-decoration: none;
   padding: 10px;
 }
 
 .gradient-text {
   font-weight: 900;
-  background: linear-gradient(45deg, #e89d97, #c4000a, #e89d97 ,#da000b);
+  background: linear-gradient(45deg, #de831e, #6f3b00, #de831e ,#6f3b00);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
